@@ -7,29 +7,29 @@ public class Livre {
     private int ISBN;
     private String status;
 
-    private int quantie;
 
-    public Livre(String titre, String auteur, int quantie) {
+
+    public Livre(String titre, String auteur) {
         this.titre = titre;
         this.auteur = auteur;
-        this.quantie = quantie;
+
     }
 
-    public Livre(String titre, String auteur, int ISBN, int quantite) {
+    public Livre(String titre, String auteur, int ISBN) {
         this.titre = titre;
         this.auteur = auteur;
         this.ISBN = ISBN;
         this.status = "disponible";
-        this.quantie = quantite;
+
     }
 
-    public Livre(int id, String titre, String auteur, int ISBN, String status, int quantite) {
+    public Livre(int id, String titre, String auteur, int ISBN, String status) {
         this.id = id;
         this.titre = titre;
         this.auteur = auteur;
         this.ISBN = ISBN;
         this.status = status;
-        this.quantie = quantite;
+
     }
 
     public int getId() {
@@ -72,11 +72,5 @@ public class Livre {
         this.status = status;
     }
 
-    public int getQuantie() {
-        return quantie;
-    }
 
-    public void setQuantie(int quantie) {
-        this.quantie = quantie;
-    }
 }
